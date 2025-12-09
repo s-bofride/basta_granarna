@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granupphämtningstjänst - Hämta Din Gran Smidigt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎄 GranExpressen</h1>
+            <nav>
+                <ul>
+                    <li><a href="#tjanst">Tjänsten</a></li>
+                    <li><a href="#priser">Priser</a></li>
+                    <li><a href="#boka">Boka Nu</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h2>Låt oss Ta Hand om Granen</h2>
+                <p>Enkel och miljövänlig upphämtning av din julgran efter helgerna. Boka din upphämtning idag!</p>
+                <a href="#boka" class="btn">Boka Upphämtning</a>
+            </div>
+        </section>
+
+        <section id="tjanst" class="tjanst">
+            <div class="container">
+                <h3>Så Här Fungerar Det</h3>
+                <div class="steg-container">
+                    <div class="steg">
+                        <h4>1. Boka</h4>
+                        <p>Fyll i formuläret med din adress och önskad dag.</p>
+                    </div>
+                    <div class="steg">
+                        <h4>2. Förbered</h4>
+                        <p>Plocka bort allt pynt och ställ ut granen vid tomtgränsen.</p>
+                    </div>
+                    <div class="steg">
+                        <h4>3. Klart!</h4>
+                        <p>Vi hämtar granen och ser till att den återvinns på bästa sätt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="priser" class="priser">
+            <div class="container">
+                <h3>Våra Priser</h3>
+                <div class="pris-kort">
+                    <h4>Standardupphämtning</h4>
+                    <p class="pris">199 kr</p>
+                    <ul>
+                        <li>För granar upp till 2,5 meter.</li>
+                        <li>Upphämtning inom 3 arbetsdagar.</li>
+                        <li>Miljövänlig återvinning ingår.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="boka" class="boka">
+            <div class="container">
+                <h3>Boka Din Upphämtning</h3>
+                <form id="bokningsform">
+                    <div class="form-grupp">
+                        <label for="namn">Namn:</label>
+                        <input type="text" id="namn" name="namn" required>
+                    </div>
+                    <div class="form-grupp">
+                        <label for="adress">Adress:</label>
+                        <input type="text" id="adress" name="adress" required>
+                    </div>
+                    <div class="form-grupp">
+                        <label for="datum">Önskat Datum (ungefärligt):</label>
+                        <input type="date" id="datum" name="datum" required>
+                    </div>
+                    <button type="submit" class="btn">Skicka Bokning</button>
+                    <p id="meddelande" class="dolt"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 GranExpressen. Enkel granupphämtning.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

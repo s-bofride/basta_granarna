@@ -1,0 +1,217 @@
+/* Grundläggande nollställning */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header och Navigation */
+header {
+    background: #006400; /* Mörkgrön */
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: 3px solid #b22222; /* Eldröd */
+}
+
+header h1 {
+    float: left;
+    margin-top: 5px;
+}
+
+header nav {
+    float: right;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    float: left;
+    padding: 0 20px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* Hero Sektion */
+.hero {
+    background: #e0f2f1; /* Ljusblågrön */
+    color: #333;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #b22222; /* Eldröd */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #8b0000; /* Mörkare röd */
+}
+
+/* Tjänstsektion (Steg) */
+.tjanst {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.steg-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.steg {
+    width: 30%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.steg h4 {
+    color: #006400;
+    margin-bottom: 10px;
+}
+
+/* Prissektion */
+.priser {
+    background: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.pris-kort {
+    width: 50%;
+    margin: 20px auto;
+    padding: 30px;
+    border: 2px solid #006400;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+.pris {
+    font-size: 2rem;
+    color: #b22222;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.pris-kort ul {
+    list-style-position: inside;
+    text-align: left;
+    margin-top: 15px;
+}
+
+/* Bokningssektion (Formulär) */
+.boka {
+    padding: 40px 0;
+    background: #e0f2f1;
+}
+
+#bokningsform {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-grupp {
+    margin-bottom: 15px;
+}
+
+.form-grupp label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-grupp input[type="text"],
+.form-grupp input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#meddelande {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    text-align: center;
+}
+
+.dolt {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsivitet */
+@media (max-width: 768px) {
+    header h1, header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul li {
+        padding: 0 10px;
+    }
+
+    .steg-container {
+        flex-direction: column;
+    }
+
+    .steg, #bokningsform, .pris-kort {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
